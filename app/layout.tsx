@@ -20,12 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      {/* <body className="h-screen w-screen overflow-hidden bg-background text-foreground"> */}
-     <body className={`${inter.variable} h-screen w-screen overflow-hidden font-sans`}>
-        <ThemeProvider attribute="class" defaultTheme="dark">
-          <div className="flex h-full w-full">
+     <body className={`${inter.variable} h-screen overflow-hidden font-sans`}>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
             {children}
-          </div>
         </ThemeProvider>
       </body>
     </html>

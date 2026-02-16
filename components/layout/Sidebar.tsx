@@ -1,9 +1,8 @@
-"use client"
+"use client";
 
 export default function Sidebar() {
   return (
-    <aside className="hidden md:flex md:w-64 flex-col bg-[#202123] hover:bg-[#2A2B32] text-gray-300">
-
+    <aside className="hidden md:flex md:w-64 flex-col bg-[#171717] hover:bg-[#2A2B32] text-gray-300">
       <div className="p-3">
         <button className="w-full text-sm px-3 py-2 rounded-md border border-[#4D4D4F] hover:bg-gray-700 transition">
           + New Chat
@@ -16,10 +15,7 @@ export default function Sidebar() {
         </div>
       </div>
 
-      <div className="p-3 text-xs text-gray-500">
-        AI Contact Center
-      </div>
-
+      <div className="p-3 text-xs text-gray-500">AI Contact Center</div>
     </aside>
-  )
+  );
 }
